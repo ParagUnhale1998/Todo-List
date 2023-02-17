@@ -1,0 +1,214 @@
+:root{
+    font-size: 1rem;
+}
+*{
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(188, 60, 239), rgb(51, 0, 255));
+    
+}
+.container{
+  width: 100vw;
+  height:100vh;
+  /* border: 3px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.todo-list{
+    position: relative;
+    width: 300px;
+    /* height:90%; */
+    height: 620px;
+    word-wrap: break-word;
+    border-radius: 5%;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#heading{
+    width: 100%;
+  text-align: center;
+    color: white;
+    position: absolute;
+    top: 1%;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-shadow: 3px 5px 10px black;
+}
+.inputvalue{
+    position: absolute;
+    top: 10%;
+}
+.i-value{
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+.i-value:focus{
+    border: none;
+    outline: none;
+    outline-offset: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.433);
+}
+.add-task{
+    width:80px;
+border: none;
+color: white;
+font-weight: 600;
+letter-spacing: 1px;
+padding: 5px 5px;
+background-color: #03d133;
+border-radius: 5px;
+
+}
+.add-task:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.433);
+    background-color: #00e034;
+}
+#task-list{
+    position: relative;
+    width: 270px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 30%;     */
+    margin-top: 70px;
+    
+}
+#task-list h3{
+    color: rgb(255, 255, 255);
+    font-size:25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+
+}
+#task-list ul {
+border: 1px solid white;
+border-radius: 5px;
+/* position: absolute;
+width: 80%;
+height: 70%;
+border-radius: 5px;
+top: 18%;
+left: 10%; */
+margin: 0;
+padding: 2%;
+margin-top: 2%;
+/* align-items: flex-start;
+display: flex;
+flex-direction: column;
+justify-content: center; */
+height: 400px;
+width: 270px;
+overflow-y: auto;
+overflow-x: auto;
+}
+#task-list ul::-webkit-scrollbar{
+    width: 10px;
+    
+
+  }
+  ul::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  /* Style the scrollbar thumb */
+  #task-list ul::-webkit-scrollbar-thumb {
+    background-color: #695ada;
+    height: 10px;
+    border-radius: 10px;
+  }
+  #task-input{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    width: 200px;
+    height: 25px;
+    margin: 1%;
+    padding: 0;
+    font-weight: 530;
+    text-transform: capitalize;
+  }
+  #task-input:focus{
+    border: none;
+    outline: none;
+    color: white;
+  }
+  #task-input::placeholder{
+    color: white;
+  }
+#task-list ul li {
+text-align: left;
+display: flex;
+justify-content: start;
+justify-content: space-between;
+text-decoration: none;
+list-style: none;
+font-size: 25px;
+padding-left: 3%;
+color: white;
+text-transform: capitalize;
+border: 1px solid white;
+margin-bottom: 4%;
+border-radius: 5px;
+box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.473);
+position: relative;
+}
+.button-container{
+    display: flex;
+    width: 270px;
+}
+
+.clear-task ,.edit-task, .delete-task{
+    /* position: absolute;
+    bottom: 2%; */
+    width: 100px;
+    margin: 1%;
+    height: 30px;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    background-color: #d11e03;
+    border-radius: 5px;
+    margin-top: 8%;
+}
+.edit-task{
+    background-color: #12b903;
+}
+.delete-task{
+    background-color: #080707;
+}
+.clear-task:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.433);
+    background-color: #e92000;
+}
+.edit-task:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.433);
+    background-color: #13de00;
+}
+.delete-task:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.433);
+    background-color: #383a3a;
+}
+#task-list input[type=checkbox]{
+  width: 20px;
+  height: auto;
+  position: relative;
+  
+}
